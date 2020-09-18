@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BDD Test Suite" verbose="1" parallel="tests" thread-count="50" configfailurepolicy="continue ">
+
+    <!-- CHROME testing -->
+
+    <!-- Chrome in the US -->
+
+    <test name="Chrome 74.0 on Windows 10 in the US DC">
+        <parameter name="browser" value="CHROME"/>
+        <parameter name="version" value="74.0"/>
+        <parameter name="platformName" value="Windows 10"/>
+        <parameter name="capturePerformance" value="true"/>
+        <classes>
+            <class name="com.saucelabs.example.DesktopTestRunner"/>
+        </classes>
+    </test>
+
+    <test name="Chrome 73.0 on Windows 10 in the US DC">
+        <parameter name="browser" value="CHROME"/>
+        <parameter name="version" value="73.0"/>
+        <parameter name="platformName" value="Windows 8.1"/>
+        <parameter name="capturePerformance" value="true"/>
+        <classes>
+            <class name="com.saucelabs.example.DesktopTestRunner"/>
+        </classes>
+    </test>
+
+    <test name="Chrome 74.0 on macOS in the US DC">
+        <parameter name="browser" value="CHROME"/>
+        <parameter name="version" value="74.0"/>
+        <parameter name="platformName" value="macOS 10.14"/>
+        <parameter name="dataCenter" value="US"/>
+        <parameter name="capturePerformance" value="true"/>
+        <classes>
+            <class name="com.saucelabs.example.DesktopTestRunner"/>
+        </classes>
+    </test>
+
+    <test name="Chrome 73.0 on macOS in the US DC">
+        <parameter name="browser" value="CHROME"/>
+        <parameter name="version" value="73.0"/>
+        <parameter name="platformName" value="macOS 10.13"/>
+        <parameter name="dataCenter" value="US"/>
+        <parameter name="capturePerformance" value="true"/>
+        <classes>
+            <class name="com.saucelabs.example.DesktopTestRunner"/>
+        </classes>
+    </test>
+
+    <!--Chrome in the EU-->
+
+<!--    <test name="Chrome 74.0 on Windows 10 in the EU DC">-->
+<!--        <parameter name="browser" value="CHROME"/>-->
+<!--        <parameter name="version" value="74.0"/>-->
+<!--        <parameter name="platformName" value="Windows 10"/>-->
+<!--        <parameter name="dataCenter" value="EU"/>-->
+<!--        <parameter name="capturePerformance" value="true"/>-->
+<!--        <classes>-->
+<!--            <class name="com.saucelabs.example.DesktopTestRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Chrome 73.0 on Windows 10 in the EU DC">-->
+<!--        <parameter name="browser" value="CHROME"/>-->
+<!--        <parameter name="version" value="73.0"/>-->
+<!--        <parameter name="platformName" value="Windows 10"/>-->
+<!--        <parameter name="dataCenter" value="EU"/>-->
+<!--        <parameter name="capturePerformance" value="true"/>-->
+<!--        <classes>-->
+<!--            <class name="com.saucelabs.example.DesktopTestRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Chrome 74.0 on macOS in the EU DC">-->
+<!--        <parameter name="browser" value="CHROME"/>-->
+<!--        <parameter name="version" value="74.0"/>-->
+<!--        <parameter name="platformName" value="macOS 10.13"/>-->
+<!--        <parameter name="dataCenter" value="EU"/>-->
+<!--        <parameter name="capturePerformance" value="true"/>-->
+<!--        <classes>-->
+<!--            <class name="com.saucelabs.example.DesktopTestRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Chrome 73.0 on macOS in the EU DC">-->
+<!--        <parameter name="browser" value="CHROME"/>-->
+<!--        <parameter name="version" value="73.0"/>-->
+<!--        <parameter name="platformName" value="macOS 10.13"/>-->
+<!--        <parameter name="dataCenter" value="EU"/>-->
+<!--        <parameter name="capturePerformance" value="true"/>-->
+<!--        <classes>-->
+<!--            <class name="com.saucelabs.example.DesktopTestRunner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
